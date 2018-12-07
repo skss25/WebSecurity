@@ -1,0 +1,16 @@
+CREATE TABLE Board(
+id INT AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(50) NOT NULL,
+register VARCHAR(20) NOT NULL,
+regdate DATE,
+text TEXT
+);
+
+INSERT INTO Board(id, title, register, regdate, text) VALUES(NULL, 'Little Boy', 'Sam', NOW(), '영화입니다.');
+INSERT INTO Board(id, title, register, regdate, text) VALUES(NULL, '안녕하세요', '샘오취리', NOW(), '저는 한국인입니다.');
+INSERT INTO Board(id, title, register, regdate, text) VALUES(NULL, '관리자입니다.', 'admin', NOW(), '이 사이트 곧 폐쇄합니다.');
+INSERT INTO Board(id, title, register, regdate, text) VALUES(NULL, '방학좀..', '박혜진', NOW(), '살려주세요...');
+INSERT INTO Board(id, title, register, regdate, text) VALUES(NULL, '저 군대갑니다...', '박현준', NOW(), '잘 구르고 오겠습니다.');
+INSERT INTO Board(id, title, register, regdate, text) VALUES(NULL, '관리자님 보세요.', '곽찬영', NOW(), '안녕하세요!:)');
+
+SELECT * FROM Board;
