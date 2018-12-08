@@ -1,0 +1,14 @@
+Content cnt = new Content();
+		String text = null;
+		cnt.setTitle(req.getParameter("title"));
+		cnt.setRegister(req.getParameter("register"));
+		
+		text = req.getParameter("text");
+		if(text != null) {
+			text = text.replaceAll("<", "&lt;");
+			text = text.replaceAll(">", "&gt;");
+			text = text.replaceAll("&", "&amp;");
+			text = text.replaceAll("\"", "&quot;");
+			cnt.setText(text);
+		}
+		

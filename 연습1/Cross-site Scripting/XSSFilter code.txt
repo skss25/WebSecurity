@@ -1,0 +1,8 @@
+XssFilter xssFilter = XssFilter.getInstance("lucy-xss-superset.xml");
+		String title = xssFilter.doFilter(cnt.getTitle());
+		String register = xssFilter.doFilter(cnt.getRegister());
+		String text = xssFilter.doFilter(cnt.getText());
+		
+		cnt.setTitle(title);
+		cnt.setRegister(register);
+		cnt.setText(text);
